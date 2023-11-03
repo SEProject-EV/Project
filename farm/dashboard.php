@@ -44,8 +44,7 @@ check_login();
 <!--  Author Name: Nikhil Bhalerao From India 
  for any PHP, Codeignitor, Laravel OR Python work contact me at +919423979339 OR ndbhalerao91@gmail.com  
  Visit website : www.nikhilbhalerao.com -->
- <strong style="color: red; background-color: white; margin-left: 100px;">
-                        Alert : Don't Sale or Publish this script with your name. However you can use it for Academic Practice !</strong>
+
         <div class="content-wrapper">
           <div class="row">
             <div class="col-md-6">
@@ -241,7 +240,7 @@ check_login();
 
         
         
-        <?php @include("includes/footer.php");?>
+       
 <!--  Author Name: Nikhil Bhalerao From India 
  for any PHP, Codeignitor, Laravel OR Python work contact me at +919423979339 OR ndbhalerao91@gmail.com  
  Visit website : www.nikhilbhalerao.com -->

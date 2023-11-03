@@ -21,10 +21,9 @@ if(!empty($_POST["companyname"])) {
             $companyname=$_POST['companyname'];
             $permision='Admin';
             $confirmpassword=md5($_POST['confirmpassword']); 
-            $sql="INSERT INTO  tbladmin(AdminName,UserName,CompanyName,Password) VALUES(:permision,:username,:companyname,:confirmpassword)";
+            $sql="INSERT INTO  tbladmin(AdminName,UserName,Password) VALUES(:permision,:username,:confirmpassword)";
             $query = $dbh->prepare($sql);
             $query->bindParam(':username',$username,PDO::PARAM_STR);
-            $query->bindParam(':companyname',$companyname,PDO::PARAM_STR);
             $query->bindParam(':permision',$permision,PDO::PARAM_STR);
             $query->bindParam(':confirmpassword',$confirmpassword,PDO::PARAM_STR);
             $query->execute();
@@ -120,7 +119,7 @@ if(!empty($_POST["companyname"])) {
                     <div class="col-lg-4 mx-auto">
                         <div class="auth-form-light text-left p-5">
                             <div class="brand-logo" align="center">
-                                <img class="img-avatar" src="profileimages/compconsult2.jpg" alt="">
+                                <img class="img-avatar" src="assets/images/logo.png" alt="">
                             </div>
                             <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6>
                             <form class="pt-3" method="post" enctype="multipart/form-data" name="signup" onSubmit="return valid();">

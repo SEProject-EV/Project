@@ -65,7 +65,7 @@ if(isset($_POST['login']))
                     <div class="col-lg-6 mx-auto  p-0">
                         <div class="auth-form-light text-left p-5" style="margin-top: 150px;">
                             <div align="center">
-                                <img style="height: 125px;" class="img-avatar mb-3" src="assets/img/companyimages/logo.jpg" alt="">
+                                <img style="height: 125px;" class="img-avatar mb-3" src="assets/images/logo.png" alt="">
                             </div>
                             <form role="form" id=""  method="post" enctype="multipart/form-data" class="col-md-8 mx-auto">  
                                 <div class="form-group first">
@@ -84,6 +84,11 @@ if(isset($_POST['login']))
                                         Forgot Password
                                     </a>
                                 </div>
+                                <div class="text-center mt-4 font-weight-light">
+                                    Don't have an account? 
+                                    <a href="register.php" class="text-primary">
+                                        Register
+                                    </a>
                             </form>
                         </div>
                     </div>
@@ -113,8 +118,6 @@ if(isset($_POST['login']))
         </div>
         
     </div>
-    
-    <?php @include("includes/foot.php");?>
     
     <script>function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 1000);
